@@ -1,0 +1,22 @@
+/* Top navbar */
+.navbar {
+  height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  flex-wrap: nowrap !important;
+}
+
+.dropdown-item:hover {
+  background: #fff5ee!important;
+  color: #ff5c00!important;
+}
+
+

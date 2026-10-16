@@ -1,0 +1,217 @@
+.tabWrapper {
+  /* padding: 1rem; */
+  background-color: #f8f9fa;
+}
+
+/* Full width border here */
+.tabHeader {
+  border-bottom: 1px solid #ddd;
+  padding: 0px!important;
+}
+
+.tabContainer {
+  display: flex;
+  gap: 2.4rem;
+  /* border-bottom: 1px solid #ddd; */
+   padding: 0 14px;
+   padding-top: 14px;
+  position: relative;
+}
+
+.tabItem {
+  position: relative;
+  padding-bottom: 10px;
+  cursor: pointer;
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.tabLabel {
+  margin-right: 5px;
+}
+
+.tabCount {
+  font-style: italic;
+  color: #bbb;
+  transition: color 0.3s ease;
+}
+
+.active .tabCount {
+  color: #ff4800;
+  background-color: #fff5ee;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.activeLine {
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 2px;
+  background-color: #fc5b3f;
+  border-radius: 1px;
+}
+
+.tabContent {
+     background-color: white!important;
+     padding: 2px;
+}
+
+/* components/ClientList.module.css */
+
+.clientWrapper {
+  margin-top: 1rem;
+}
+
+.headerRow {
+  display: grid;
+  grid-template-columns: 25% 25% 30% 20%;
+  padding: 1rem;
+  background-color: #FFF4ec;
+  color: #1E2129;
+  font-weight: bold;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.clientBlock {
+  display: grid;
+  grid-template-columns: 25% 25% 30% 20%;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  row-gap: 0.5rem;
+}
+
+.clientName {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.clientIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffb6c1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue {
+  background-color: #cce5ff;
+}
+
+/* .clientIcon img {
+  width: 30px;
+  height: 30px;
+} */
+
+.clientInfo {
+  font-size: 1rem;
+}
+
+.clientPan,
+.clientContact,
+.clientEsign {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.clientContact i {
+  margin-right: 6px;
+  color: #ff5f00;
+}
+
+.clientEsign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.pendingBtn {
+  background-color: #FFF4E1;
+  color: #D58800;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid #f5a62333;
+  text-align: start;
+}
+
+.infoBlock {
+  grid-column: 1 / -1;
+  padding: 10px;
+  background: #f9f9f9;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.statusIcons {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+.statusIcons span {
+  background: #fff3e0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #444;
+}
+
+.green {
+  background-color: #d4edda !important;
+  color: #155724 !important;
+}
+
+.dropdownItem:hover {
+  background-color: #fff5ee!important;
+  color: #ff5c00!important;
+}
+
+.custom-table-header th {
+  background-color: #fff5ee !important;
+  color: #1e2129;
+}
+
+.custom-table-header .table-cell {
+  color: #1e2129 !important;
+}
+
+/* styles.module.css */
+.no-bottom-border td {
+  border-bottom: none !important;
+}
+
+.gridFullRow {
+  grid-column: 1 / -1;
+}
+
+
+@media (max-width: 600px) {
+  .clientWrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .headerRow,
+  .clientBlock {
+    min-width: 750px;
+    /* You can adjust this width as needed */
+  }
+}
+

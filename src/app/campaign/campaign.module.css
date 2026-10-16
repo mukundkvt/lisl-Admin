@@ -1,0 +1,60 @@
+.applyBtn {
+  /* display: block;  remove this */
+  padding: 10px 16px;
+  background: linear-gradient(180deg, #ff2200 0%, #ff7700 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.applyBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: react-select ke 38–40px control height se match karne ke liye */
+.applyBtn {
+  height: 38px;
+  line-height: 1;
+}
+
+.applyBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.table-head {
+  background: linear-gradient(to right, #fffaf5, #fbece0);
+  color: #555555;
+}
+
+.custom-table-header th {
+  background-color: #fff5ee !important;
+  color: #1e2129;
+}
+
+.custom-table-header .table-cell {
+  color: #1e2129 !important;
+}
+
+.table-cell {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  vertical-align: middle !important;
+  color: #1e2129 !important;
+}
+.table-cell-first {
+  padding-left: 32px !important;
+  color: #1e2129 !important;
+}
+.table-cell-last {
+  padding-right: 0px !important;
+}
+
+.customTableHeader th {
+  background-color: #fff5ee !important;
+  color: #1e2129;
+}

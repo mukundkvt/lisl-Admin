@@ -1,0 +1,39 @@
+{
+  "name": "laxhmishree-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@iconify/react": "^6.0.0",
+    "@tanstack/react-query": "^5.83.0",
+    "axios": "^1.11.0",
+    "bootstrap": "^5.3.7",
+    "date-fns": "^4.1.0",
+    "lodash.debounce": "^4.0.8",
+    "lucide-react": "^0.560.0",
+    "moment": "^2.30.1",
+    "next": "^16.2.12",
+    "nprogress": "^0.2.0",
+    "pdfjs-dist": "^5.3.93",
+    "react": "^19.0.0",
+    "react-date-range": "^2.0.1",
+    "react-datepicker": "^8.7.0",
+    "react-dom": "^19.0.0",
+    "react-loading-skeleton": "^3.5.0",
+    "react-pdf": "^10.1.0",
+    "react-select": "^5.10.2",
+    "react-toastify": "^11.0.5",
+    "react-tooltip": "^5.29.1",
+    "recharts": "^3.7.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^0.1.0",
+    "eslint": "^10.8.0",
+    "eslint-config-next": "^0.2.4"
+  }
+}

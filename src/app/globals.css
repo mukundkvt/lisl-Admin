@@ -1,0 +1,268 @@
+html,
+body {
+  font-size: 14px;
+}
+
+@theme {
+  --color-primary: #4d6bfe;
+}
+
+/* Overall container: left = sidebar, right = content */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow-x: auto;
+}
+
+.main-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.main-content {
+  flex: 1;
+  overflow: auto;
+  /* will-change: transform; */
+  /* transform: translateZ(0); */
+  backface-visibility: hidden;
+}
+
+/* Add button to open popup */
+.add-button {
+  background: linear-gradient(180deg, #ff2200, #ff7700);
+  color: #ffffff !important
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.btn-outline-secondary:hover {
+  background: #fff5ee !important;
+  color: #ff5c00 !important;
+  border-color: #ff5c00 !important;
+}
+
+.btn-outline-secondary {
+  border-color: #c6c7c7 !important;
+}
+
+/* Filter Icon */
+.filter-icon-wrapper.active {
+  background-color: #fff5ee;
+}
+
+.filter-icon-wrapper {
+  background-color: #f8f9fa;
+}
+
+/* loader spin */
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Custom switch ON color */
+.custom-switch:checked {
+  background-color: #56ca00 !important;
+  border-color: #56ca00 !important;
+}
+
+.form-switch .form-check-input {
+  width: 2.3em !important;
+}
+
+.form-check-input {
+  height: 1.2em !important;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Modal ke content ko full available height tak allow karo */
+.modal-dialog {
+  /* optional: large modals me helpful */
+  max-width: 900px; /* zarurat ke hisaab se */
+}
+
+.customModal-dialog {
+  margin: 0px !important;
+}
+
+/* Fullscreen dialog par outer gap as padding */
+.customModal-dialog.modal-fullscreen {
+  padding: 26px; /* yahin se outer gap control karo (e.g., 24px) */
+  box-sizing: border-box;
+  margin: 0 !important; /* margin hatao, padding hi use hogi */
+}
+
+/* Modal content ko padded area me neatly fit karao */
+.customModal-dialog.modal-fullscreen .modal-content {
+  height: 100%;
+  border-radius: 7px; /* optional rounded corners for visible gap */
+  overflow: hidden; /* header/footer ke saath clean edges */
+  background: #f8f9fb; /* aap already inline de rahe ho; yahan bhi rakh sakte ho */
+}
+
+/* Aapke existing layout rules ko align karo */
+.modal-content {
+  max-height: none; /* 100vh ki jagah 100% height model use hua hai */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header/footer stable rahein */
+.modal-header,
+.modal-footer {
+  flex-shrink: 0;
+}
+
+/* Body me hi scroll ho */
+.modal-body {
+  overflow: auto;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.custom-table tbody tr:last-child {
+  border-bottom: none !important;
+}
+
+.custom-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* hide border when click on copy and redirect icon in campaign which is given by react-tooltip */
+
+.lucide-copy {
+  outline: none !important;
+  border: none !important;
+}
+.lucide-copy:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.lucide-external-link {
+  outline: none !important;
+  border: none !important;
+}
+.lucide-external-link:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+/* Input if type number then up down arrow hide */
+/* Chrome, Safari, Edge, Opera */
+.no-spinner::-webkit-inner-spin-button,
+.no-spinner::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.no-spinner {
+  -moz-appearance: textfield;
+}
+
+/* table body rows height */
+.custom-table-height {
+  height: 50px !important;
+}
+
+/* Global CSS (Bootstrap ke baad load ho) */
+tr.custom-table-height td {
+  transition: background-color 0.2s ease;
+}
+tr.custom-table-height:hover td {
+  background-color: #f8f9fa !important; /* ensure it wins */
+  cursor: pointer;
+}
+
+.modal-close-button {
+  background: #f8f9fa !important;
+  color: #6c757d !important;
+  border-color: #6c757d !important;
+}
+
+.modal-close-button:hover {
+  background: #fff5ee !important;
+  color: #ff5c00 !important;
+  border-color: #ff5c00 !important;
+}
+
+/* set background on every td inside tbody of this table */
+.custom-table tbody td {
+  background-color: #f8f9fa;
+}
+
+/* optional: thoda smooth transition */
+.custom-table tbody td {
+  transition: background-color 0.15s ease;
+}
+
+.custom-table tbody tr:hover td{
+  background-color: #f3f5f7!important; 
+}
+
+.custom-table {
+  margin-bottom: 0 !important;
+}
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #eeeeee 25%,
+    #f5f5f5 37%,
+    #eeeeee 63%
+  );
+  background-size: 400% 100%;
+  animation: shimmer 1.4s ease infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -400px 0;
+  }
+  100% {
+    background-position: 400px 0;
+  }
+}
+
+
+/* ===== NProgress Bar Styles ===== */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #3b82f6 !important;
+  position: fixed;
+  z-index: 99999 !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.6);
+  animation: nprogress-pulse 1.5s ease-in-out infinite;
+}
+
+#nprogress .spinner {
+  display: none !important;
+}
+
+@keyframes nprogress-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}

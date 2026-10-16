@@ -1,0 +1,240 @@
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #ffffff;
+  color: #585757;
+  transition: width 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+/* Logo container - top spacing and center alignment */
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 80px; /* adjust for top padding */
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Logo full */
+.logo {
+  max-height: 48px;
+  transition: all 0.3s ease;
+}
+
+/* Center the icon logo only in collapsed state */
+.sidebar.collapsed .logo-container {
+  justify-content: center;
+}
+
+/* Logo collapsed */
+.collapsed-logo {
+  max-width: 36px;
+  max-height: 36px;
+}
+
+/* Radio Button */
+.kyctype-selector {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 0px !important;
+}
+.kyctype-selector .radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.kyctype-selector .radio-wrapper {
+  position: relative;
+}
+
+.kyctype-selector input[type="radio"] {
+  display: none;
+}
+
+.kyctype-selector .custom-radio {
+  padding: 5px 18px;
+  border-radius: 30px;
+  border: 1px solid #ff2200;
+  background: #fff;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+.kyctype-selector input[type="radio"]:checked + .custom-radio {
+  background: linear-gradient(180deg, #ff2200 0%, #ff7700 100%);
+  color: white;
+  border-color: #ff2200;
+  box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3);
+}
+
+.kyctype-selector .custom-radio:hover {
+  background-color: #ff2200;
+  border-color: #ff2200;
+  color: #fff;
+}
+
+.kyctype-selector .radio-group {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center; /* Add this line */
+}
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 7px 14px;
+  color: #585757;
+  margin: 3px 17px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.nav-item .icon svg {
+  width: 17px;
+}
+
+.nav-item:hover {
+  /* background: linear-gradient(180deg, #FF2200, #FF7700); */
+  background: #fff5ee;
+  color: #ff5c00;
+  margin: 3px 17px;
+  transition: background 0.2s ease;
+  border-radius: 8px;
+  padding: 7px 14px;
+}
+
+/* COLLAPSED SIDEBAR: remove label spacing, center icon */
+.sidebar.collapsed .nav-item {
+  justify-content: center;
+  margin: 2px auto; /* Remove left-right margin to center icon */
+  padding: 8px 15px;
+   color: #5e5d5d;
+}
+
+.icon {
+  margin-right: 12px;
+}
+
+.sidebar.collapsed .icon {
+  margin: 0 auto;
+}
+
+.sidebar.collapsed .label {
+  display: none;
+}
+
+.nav-item.active {
+  color: #f55239 !important;
+  background: #fff5ee;
+}
+
+/* Sidebar fixed width */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 260px;
+  background-color: #fff;
+  border-right: 1px solid #e0e0e0;
+  position: sticky;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    order: 2;
+    margin-top: 0px;
+    font-size: 13px;
+  }
+
+  .main-content {
+    margin-left: 60px;
+  }
+  .main-section {
+    order: 1;
+  }
+}
+
+@media (max-width: 455px) {
+  .sidebar.collapsed {
+    display: none !important;
+  }
+  .main-content {
+    margin-left: 0 !important;
+  }
+}
+
+.nav-section {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 10px;
+  color: #a0a5b3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.nav-item.active {
+  /* background-color: #f5f5f5; */
+  font-weight: 600;
+}
+
+.sub-item.active {
+  color: #ff5c00;
+  font-weight: 500;
+  background-color: #fff5ee;
+}
+
+.sub-item:hover {
+  background-color: #fff5ee;
+  color: #ff5c00!important;
+}
+
+
+/* Dropdown styles */
+.drops {
+  margin-left: 3rem;
+}
+
+.drops:hover {
+  margin-left: 3rem;
+}
+
+.dropdown-wrapper {
+  border-left: 1px solid #c5bebd !important;
+}

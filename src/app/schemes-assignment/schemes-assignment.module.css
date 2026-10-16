@@ -1,0 +1,28 @@
+.rowAlign {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* spacing between select and button */
+}
+
+.applyBtn {
+  /* display: block;  remove this */
+  padding: 10px 16px;
+  background: linear-gradient(180deg, #ff2200 0%, #ff7700 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.applyBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Optional: react-select ke 38–40px control height se match karne ke liye */
+.applyBtn {
+  height: 38px;
+  line-height: 1;
+}

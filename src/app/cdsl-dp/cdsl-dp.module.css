@@ -1,0 +1,89 @@
+.clientWrapper {
+  margin-top: 1rem;
+}
+
+.headerRow {
+  display: grid;
+  padding: 1rem;
+  background-color: #FFF4ec;
+  color: #1E2129;
+  font-weight: bold;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.clientBlock {
+  display: grid;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+  row-gap: 0.5rem;
+  align-items: center;
+}
+
+.clientName {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.clientInfo {
+  font-size: 0.95rem;
+}
+
+.infoBlock {
+  grid-column: 1 / -1;
+  padding: 12px 16px;
+  background: #f9fbfd;
+  border: 1px solid #e2e8f0;
+  font-size: 0.88rem;
+  border-radius: 8px;
+}
+
+.endpointGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.endpointItem {
+  background: #ffffff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #edf2f7;
+  font-size: 0.82rem;
+}
+
+.endpointLabel {
+  font-weight: 600;
+  color: #4a5568;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.endpointValue {
+  color: #2b6cb0;
+  word-break: break-all;
+  font-family: monospace;
+}
+
+.badgeSuccess {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .clientWrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .headerRow,
+  .clientBlock {
+    min-width: 950px;
+  }
+}

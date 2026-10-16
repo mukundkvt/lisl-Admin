@@ -1,0 +1,57 @@
+ .dashboardCard {
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  transition: all 0.25s ease;
+  height: 100%;
+  background: #ffffff;
+}
+
+.dashboardCard:hover {
+  transform: translateY(-px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* TEXT */
+.cardTitle {
+  font-size: 14px;
+  color: #475569;
+}
+
+.cardValue {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111827;
+  margin-top: 4px;
+}
+
+/* ICON */
+.iconWrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* GRAPH */
+.graphCard {
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+}
+
+.graphHeader {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.graphTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1e2129;
+}

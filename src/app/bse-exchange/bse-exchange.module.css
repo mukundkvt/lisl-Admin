@@ -1,0 +1,41 @@
+.clientWrapper {
+  padding: 1rem;
+}
+
+.headerRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1.5fr;
+  padding: 12px 16px;
+  background-color: #f8f9fb;
+  font-weight: 600;
+  font-size: 13px;
+  color: #6c757d;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.clientBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1.5fr;
+  padding: 14px 16px;
+  background: #ffffff;
+  border: 1px solid #edf2f7;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.clientBlock:hover {
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.clientName {
+  display: flex;
+  align-items: center;
+}
+
+.clientInfo {
+  line-height: 1.4;
+}

@@ -1,0 +1,28 @@
+
+.table-head {
+  background: linear-gradient(to right, #fffaf5, #fbece0);
+  color: #555555;
+}
+
+.custom-table-header th {
+  background-color: #fff5ee !important;
+  color: #1e2129;
+}
+
+.custom-table-header .table-cell {
+  color: #1e2129 !important;
+}
+
+.table-cell {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  vertical-align: middle !important;
+  color: #1e2129 !important;
+}
+.table-cell-first {
+  padding-left: 32px !important;
+  color: #1e2129 !important;
+}
+.table-cell-last {
+  padding-right: 0px !important;
+}
