@@ -5,7 +5,7 @@ import Link from "next/link";
 import styles from "./userManagement.module.css";
 import UserManagementForm from "@/components/UserManagementForm";
 import { Icon } from "@iconify/react";
-import UserModal from "@/pages/Modal";
+import UserModal from "@/components/Modal";
 import TableBox from "@/components/userManagementTable";
 import { useQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";

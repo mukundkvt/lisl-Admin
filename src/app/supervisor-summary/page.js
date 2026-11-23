@@ -3,7 +3,7 @@ import { Calendar, FileDown, Filter, Plus, Search } from "lucide-react";
 import Link from "next/link";
 import React, { useState, useEffect, useRef, useMemo } from "react";
 import styles from "./supervisorSummary.module.css";
-import TableBox from "@/pages/supervisorSummaryTable";
+import TableBox from "@/components/supervisorSummaryTable";
 import { Icon } from "@iconify/react";
 import DateRangePicker from "@/components/DateRangePicker";
 
